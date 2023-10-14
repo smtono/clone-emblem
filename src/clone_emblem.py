@@ -24,12 +24,23 @@ class Weapon:
     Adds attack power and possibly extra stats to a unit depending on weapon abilities
     
     """
+    
+    def __init__(self) -> None:
+        self.name = ""
+        self.might = 0
+        self.range = 0
+        self.effective = []
+        self.extra_stats = {}
 
 class Skill:
     """Extra attributes added to unit, allies, or foes, that benefit the unit in some way
     
     Class Attributes
     """
+    
+    def __init__(self) -> None:
+        self.name = ""
+        self.type = ""
 
 class Unit:
     """Battle unit with set of stats and attributes used to attack, debuff, or aid other units
